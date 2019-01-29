@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <form id="movieQuiz">
+        <label for="movie">What movie would you like to see?</label>
+        <select class="form-control" id="movie">
+          <option hidden disabled selected value> -- select an option -- </option>
+          <option value="1">Black Panther</option>
+          <option value="3">Avengers: Infinity Wars</option>
+          <option value="5">Solo: A Star Wars Movie</option>
+          <option value="7">Green Book</option>
+          <option value="9">Spider Man: Into the Spiderverse</option>
+        </select>
+        <br>
+        <label for="time">What time would you like to watch the movie?</label>
+        <select class="form-control" id="time">
+          <option hidden disabled selected value> -- select an option -- </option>
+          <option value="1">9 am</option>
+          <option value="3">Noon</option>
+          <option value="5">5 pm</option>
+          <option value="7">9 pm</option>
+          <option value="9">7 pm</option>
+        </select>
+        <br>
+        <label for="age">How old are you?</label>
+        <select class="form-control" id="age">
+          <option hidden disabled selected value> -- select an option -- </option>
+          <option value="1">0-10</option>
+          <option value="3">50 or older</option>
+          <option value="7">18-49</option>
+        </select>
+        <br>
+        <button type="submit" class="btn btn-danger"><span class="submit">Submit</span></button>
+      </form>
+      <br>
+      <div class="results">
+
+      </div>
+    </div>
+  </body>
+</html>
