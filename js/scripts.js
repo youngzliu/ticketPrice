@@ -5,7 +5,7 @@ function Ticket(movie, time, age){
 }
 
 Ticket.prototype.calculatePrice = function(){
-  var value = movie + time + age;
+  var value = this.myMovie + this.myTime + this.myAge;
   if (value >= 18){
     return 15;
   }
@@ -20,9 +20,9 @@ Ticket.prototype.calculatePrice = function(){
 $(document).ready(function() {
   $("form#movieQuiz").submit(function(event) {
     event.preventDefault();
-    var movieInput = $("select#movie").val();
-    var timeInput = $("select#time").val();
-    var ageInput = $("select#age").val();
+    var movieInput = parseInt($("select#movie").val());
+    var timeInput = parseInt($("select#time").val());
+    var ageInput = parseInt($("select#age").val());
     var ticket = new Ticket(movieInput, timeInput, ageInput);
     $(".results").text("The price of the movie is $" + ticket.calculatePrice() + ".");
   });
